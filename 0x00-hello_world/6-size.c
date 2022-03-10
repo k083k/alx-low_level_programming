@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - prints the sizes of the various sizes using printf()
+ *
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	int a;

@@ -1,7 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - prints text using printf()
+ *
+ * Return: Always 0 (success)
+ */
 
-/* program to print out some text */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
