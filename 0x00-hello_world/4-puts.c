@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - prints out text using puts()
  *
  * Return: Always 0 (Success)
