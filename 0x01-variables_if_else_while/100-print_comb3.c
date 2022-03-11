@@ -21,7 +21,7 @@ int main(void)
 			{
 				putchar(digit1);
 				putchar(digit2);
-				if(digit1 != '8')
+				if (digit1 != '8')
 				{
 					putchar(',');
 					putchar(' ');
@@ -29,6 +29,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
