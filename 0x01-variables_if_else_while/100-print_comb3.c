@@ -10,8 +10,8 @@
 
 int main(void)
 {
-	char digit1;
-	char digit2;
+	int digit1;
+	int digit2;
 
 	for (digit1 = '0'; digit1 <= '9'; digit1++)
 	{
