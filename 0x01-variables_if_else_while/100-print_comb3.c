@@ -13,7 +13,7 @@ int main(void)
 	char digit1;
 	char digit2;
 
-	for(digit1 = '0'; digit1 <= '9'; digit1++)
+	for (digit1 = '0'; digit1 <= '9'; digit1++)
 	{
 		for (digit2 = '1'; digit2 <= '9'; digit2++)
 		{
