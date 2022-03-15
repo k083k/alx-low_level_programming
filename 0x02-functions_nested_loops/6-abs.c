@@ -2,7 +2,7 @@
 
 /**
  * _abs - calculates absolute value of input
- * @int: input
+ * @c: input for processing
  * Return: return the absolute value
  */
 

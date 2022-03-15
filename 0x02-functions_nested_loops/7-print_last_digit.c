@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit - print out the last digit of a given int
- * @int - input
+ * @num: input for procession
  * Return: the last digit
  */
 
