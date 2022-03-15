@@ -6,7 +6,7 @@
  * Return: 1 if successful 0 otherwise
  */
 
-int _islower(char c)
+int _islower(int c)
 {
 	char alpha;
 	int output;
