@@ -3,18 +3,10 @@
 /**
  * _isupper - checks if input is uppercase or otherwise
  * @c: input to be checked by isupper
- * Return: 1 if uppercase, 0 if not
+ * Return: if uppercase
  */
 
 int _isupper(int c)
 {
-
-	if (c >= 'A' && c <= 'Z')
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 65 && c <= 90);
 }
