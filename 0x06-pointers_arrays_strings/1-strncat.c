@@ -4,7 +4,7 @@
  * _strncat - concatenates one string with part of another string
  * @dest: destination string
  * @src: source string
- *
+ * @n: input n
  * Return: destination String
  */
 
