@@ -2,9 +2,9 @@
 
 /**
  * _strcat - combine two strings
- * @dest - first string input
- * @src - second string input
- * 
+ * @dest: first string input
+ * @src: second string input
+ *
  * Return: destination string
  */
 
@@ -18,7 +18,7 @@ char *_strcat(char *dest, char *src)
 	}
 
 	for (y = 0; src[y] != '\0'; y++)
-	{	
+	{
 		dest[x + y] = src[y];
 	}
 
