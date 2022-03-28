@@ -4,7 +4,7 @@
 /**
  * _strpbrk - locates occurence of byte in string
  * @s: string
- * @accept: contains bytes 
+ * @accept: contains bytes
  *
  * Return: pointer to matching byte
  */
@@ -23,5 +23,5 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 	}
-	return NULL;
+	return (NULL);
 }

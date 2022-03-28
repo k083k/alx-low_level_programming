@@ -5,7 +5,7 @@
 /**
  * _strstr - locates substring in haystack
  * @haystack: string to be searched
- * @neddle: substring to match
+ * @needle: substring to match
  *
  * Return: poimnter to match
  */
@@ -38,5 +38,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack++;
 	}
-	return NULL;
+	return (NULL);
 }
