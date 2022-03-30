@@ -5,7 +5,7 @@
  * @x: integer
  * @y: exponent
  *
- * Returnn: result of operation
+ * Return: result of operation
  */
 
 int _pow_recursion(int x, int y)
