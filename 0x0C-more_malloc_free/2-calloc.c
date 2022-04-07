@@ -1,50 +1,35 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stddef.h>
-
-
-/**
- * *_memset - fills memory with a constant byte.
- * @s: pointer to put the constant
- * @b: constant
- * @n: max bytes to use
- * Return: s
- */
-
-char *_memset(char *s, char b, unsigned int n)
-{
-char *ptr = s;
-
-while (n--)
-	*s++ = b;
-
-return (ptr);
-}
+#include <stdlib.h>
 
 /**
- * _calloc - allocates memory for an array using malloc
- * @nmemb: number of elements
- * @size: size in bytes of each element
+ *_calloc - Allocates memory for an array of a certain number
+ *          of elements each of an input byte size
+ *@nmemb: Number of elements in an array
+ *@size: The byte size of each array element
  *
- * Return: pointer or NULL
+ *Return: If nmemb = 0, size = 0, or the function fails - NULL
+ *        Otherwise - a pointer to the allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *p = 0;
+	void *mem;
+	char *filler;
+	unsigned int index;
 
 	if (nmemb == 0 || size == 0)
-	{
 		return (NULL);
-	}
-	else
-	{
-		p = malloc(size * nmemb);
-		if (p == NULL)
-		{
-			return (NULL);
-		}
-		_memset(p, 0, nmemb * size);
-		return (p);
-	}
+
+	mem = malloc(size * nmemb);
+
+	if (mem == NULL)
+		return (NULL);
+
+	filler = mem;
+
+	for (index = 0; index < (size * nmemb); index++)
+		filler[index] = '\0';
+
+	return (mem);
 }
