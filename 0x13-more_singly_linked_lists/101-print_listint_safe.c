@@ -1,29 +1,30 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - prints the circular linked list
- * @head: pointer to the head
+ * print_listint_safe - prints a linked list, safely
+ * @head: list of type listint_t to print
  *
- * Return: number of nodes
+ * Return: number of nodes in the list
  */
 
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t i = 0;
-	listint_t *temp = (listint_t *)head;
+	size_t num = 0;
+	long int diff;
 
-	while (temp && temp > temp->next)
+	while (head)
 	{
-		printf("[%p] %d\n", (void *)temp, temp->n);
-		temp = temp->next;
-		i++;
-	}
-	if (temp)
-	{
-		printf("[%p] %d\n", (void *)temp, temp->n);
-		printf("-> [%p] %d\n", (void *)temp->next, temp->next->n);
-		i++;
+		diff = head - head->next;
+		num++;
+		printf("[%p] %d\n", (void *)head, head->n);
+		if (diff > 0)
+			head = head->next;
+		else
+		{
+			printf("-> [%p] %d\n", (void *)head->next, head->next->n);
+			break;
+		}
 	}
 
-	return (i);
+	return (num);
 }
